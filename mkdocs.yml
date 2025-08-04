@@ -1,3 +1,16 @@
-site_name: My Docs
+site_name: Yash Shah
 theme:
   name: shadcn
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+hooks:
+  - hooks/typst_math.py
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - overrides/extra-javascript/copy-math.js
