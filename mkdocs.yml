@@ -2,6 +2,9 @@ site_name: Yash Shah
 theme:
   name: shadcn
 
+plugins:
+  - blog
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -14,3 +17,4 @@ extra_css:
 
 extra_javascript:
   - overrides/extra-javascript/copy-math.js
+

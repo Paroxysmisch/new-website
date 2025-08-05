@@ -161,6 +161,12 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-blog-plugin"
+version = "0.25"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a4/de/cd98844ffa535f3d56d78437ecdf0c351d486f91933683f926dfac15b149/mkdocs-blog-plugin-0.25.tar.gz", hash = "sha256:36dcd804f6ab1314d19c32e46bf21076d5f4425e1bca22f2e735b9b4baaec836", size = 6117 }
+
+[[package]]
 name = "mkdocs-get-deps"
 version = "0.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -195,6 +201,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "mkdocs" },
+    { name = "mkdocs-blog-plugin" },
     { name = "mkdocs-shadcn" },
     { name = "pymdown-extensions" },
 ]
@@ -202,6 +209,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "mkdocs", specifier = ">=1.6.1" },
+    { name = "mkdocs-blog-plugin", specifier = ">=0.25" },
     { name = "mkdocs-shadcn", specifier = ">=0.9.0" },
     { name = "pymdown-extensions", specifier = ">=10.16.1" },
 ]

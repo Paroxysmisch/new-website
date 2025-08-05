@@ -1,5 +1,8 @@
 ---
+title: Demo page
+summary: Example page for mkdocs-shadcn users
 math: typst
+sidebar_title: Home
 ---
 
 # Welcome to MkDocs
