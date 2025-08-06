@@ -24,3 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.getElementsByClassName("external_links")[0].classList.add('flex-wrap', 'flex-gap');
+document.querySelector('img[alt="image"]').classList.add("rounded-xl");

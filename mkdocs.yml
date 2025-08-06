@@ -4,10 +4,28 @@ theme:
 
 plugins:
   - blog
+  - search
+  - excalidraw
+  - mkdocstrings
 
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - admonition:
+  - codehilite:
+  - fenced_code:
+  - footnotes:
+  - extra:
+  - pymdownx.blocks.details:
+  - pymdownx.tabbed:
+  - pymdownx.blocks.tab:
+      combine_header_slug: true
+      separator: ___
+  - pymdownx.progressbar:
+  - pymdownx.snippets:
+  - pymdownx.arithmatex:
+      generic: true
+  - shadcn.extensions.echarts.alpha:
 
 hooks:
   - hooks/typst_math.py
