@@ -28,3 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementsByClassName("external_links")[0].classList.add("flex-wrap", "flex-gap");
 document.querySelector('img[alt="image"]').classList.add("rounded-xl");
 document.getElementById("search-dialog").parentElement.classList.remove("hidden");
+document.querySelector('input[data-slot="command-input"]').placeholder = "Search everything...";
+document.querySelector('span.text-muted-foreground.hidden.lg\\:inline-flex').textContent = "Search everything...";
+
