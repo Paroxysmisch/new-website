@@ -1,0 +1,51 @@
+.typst-math > svg {
+  overflow: visible;
+}
+div.typst-math {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+/*
+    https://v3.tailwindcss.com/docs/screen-readers
+    will interrupt the selection, thus unusable
+*/
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
+:root {
+  --math-text-color: var(--color-neutral-800) /* (light mode) */;
+}
+
+.dark {
+  --math-text-color: var(--color-neutral-300); /* (dark mode) */
+}
+
+.typst-math svg {
+  fill: var(--math-text-color) !important;
+  stroke-width: 0.2pt;
+  stroke: currentcolor;
+  overflow: visible;
+  transform: scale(1.2); /* Make the math SVG 20% larger */
+}
+
+.typst-math.copied {
+  outline: 2px solid limegreen;
+  outline-offset: 4px;
+}
+
+.typst-math.transparent {
+    outline: 2px solid transparent;
+    outline-offset: 4px;
+}
+
+.flex-gap {
+  row-gap: 10px;
+}
+
+a[data-slot="button"] {
+  text-decoration: none !important;
+}
