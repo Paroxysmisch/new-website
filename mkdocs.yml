@@ -1,5 +1,6 @@
 site_name: Yash Shah
-repo_url: https://github.com/Paroxysmisch/new-website
+repo_url: https://github.com/Paroxysmisch/paroxysmisch.github.io
+site_url: https://paroxysmisch.github.io/
 theme:
   name: shadcn
   show_stargazers: false
